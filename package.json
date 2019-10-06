@@ -24,6 +24,7 @@
         "lodash": "^4.17.15"
     },
     "devDependencies": {
+        "eslint": "^6.5.1",
         "fast-glob": "^3.0.4"
     }
 }
