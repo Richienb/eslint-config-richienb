@@ -1,0 +1,24 @@
+language: node_js
+
+node_js: lts/*
+
+cache:
+    - npm
+    - yarn
+
+before_install: npm i -g yarn
+
+install: yarn --non-interactive
+
+script:
+    - yarn lint
+    - yarn test
+    - if [ -n "$TRAVIS_TAG" ]; then npm version $TRAVIS_TAG; fi
+
+deploy:
+    - provider: npm
+      email: richiebendall@gmail.com
+      skip_cleanup: true
+      api_key: $npm_token
+      on:
+          tags: true

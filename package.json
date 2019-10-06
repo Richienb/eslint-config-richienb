@@ -1,0 +1,29 @@
+{
+    "name": "eslint-config-richienb",
+    "version": "0.0.0",
+    "main": "index.js",
+    "author": "Richie Bendall <richiebendall@gmail.com>",
+    "license": "MIT",
+    "files": [
+        "utils/**/*",
+        "index.js",
+        "node.js",
+        "ts.js"
+    ],
+    "scripts": {
+        "lint": "eslint .",
+        "test": "node test"
+    },
+    "peerDependencies": {
+        "eslint": ">= 3"
+    },
+    "dependencies": {
+        "@typescript-eslint/eslint-plugin": "^2.3.2",
+        "@typescript-eslint/parser": "^2.3.2",
+        "eslint-config-google": "^0.14.0",
+        "lodash": "^4.17.15"
+    },
+    "devDependencies": {
+        "fast-glob": "^3.0.4"
+    }
+}
