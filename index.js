@@ -1,3 +1,4 @@
+/* eslint-disable unicorn/prevent-abbreviations */
 module.exports = {
     env: {
         browser: true,
@@ -5,8 +6,23 @@ module.exports = {
         node: true,
     },
     extends: [
+        "eslint:recommended",
         "google",
+        "plugin:node/recommended",
+        "plugin:import/recommended",
+        "plugin:promise/recommended",
+        "plugin:unicorn/recommended",
     ],
+    parserOptions: {
+        ecmaVersion: 2020,
+        ecmaFeatures: {
+            impliedStrict: true,
+        },
+    },
+    globals: {
+        Atomics: "readonly",
+        SharedArrayBuffer: "readonly",
+    },
     rules: {
         "indent": [
             "error",
@@ -35,5 +51,7 @@ module.exports = {
             "error",
             "always",
         ],
+        "promise/catch-or-return": 1,
+        "unicorn/prevent-abbreviations": 1,
     },
 }
