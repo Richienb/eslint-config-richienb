@@ -51,7 +51,10 @@ module.exports = {
             "error",
             "always",
         ],
-        "promise/catch-or-return": 1,
-        "unicorn/prevent-abbreviations": 1,
+        "promise/catch-or-return": 0,
+        "promise/no-callback-in-promise": 0,
+        "unicorn/catch-error-name": 0,
+        "unicorn/prevent-abbreviations": 0,
+        "node/no-unsupported-features/es-syntax": 0,
     },
 }
