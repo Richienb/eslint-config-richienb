@@ -24,9 +24,6 @@
         "lint": "eslint .",
         "test": "node test"
     },
-    "engines": {
-        "node": ">=8"
-    },
     "peerDependencies": {
         "eslint": ">=6.2"
     },
