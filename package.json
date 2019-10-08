@@ -1,5 +1,6 @@
 {
     "name": "eslint-config-richienb",
+    "description": "My shared eslint configurations for different projects.",
     "version": "0.0.0",
     "keywords": [
         "eslint",
