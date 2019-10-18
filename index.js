@@ -11,6 +11,7 @@ module.exports = {
         "plugin:import/recommended",
         "plugin:promise/recommended",
         "plugin:unicorn/recommended",
+        "deprecated",
     ],
     parserOptions: {
         ecmaVersion: 2020,
@@ -45,7 +46,6 @@ module.exports = {
                 ],
             },
         ],
-        "valid-jsdoc": 0,
         "object-curly-spacing": [
             "error",
             "always",
