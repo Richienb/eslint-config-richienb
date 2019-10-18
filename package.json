@@ -1,5 +1,6 @@
 {
     "name": "eslint-config-richienb",
+    "description": "My shared eslint configurations for different projects.",
     "version": "0.0.0",
     "keywords": [
         "eslint",
@@ -22,9 +23,6 @@
     "scripts": {
         "lint": "eslint .",
         "test": "node test"
-    },
-    "engines": {
-        "node": ">=8"
     },
     "peerDependencies": {
         "eslint": ">=6.2"
