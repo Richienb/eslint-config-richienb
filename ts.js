@@ -1,9 +1,10 @@
-module.exports = require("./utils/extend")({
+module.exports = {
     parser: "@typescript-eslint/parser",
     plugins: [
         "@typescript-eslint",
     ],
     extends: [
+        "./index",
         "plugin:import/typescript",
         "plugin:@typescript-eslint/eslint-recommended",
         "plugin:@typescript-eslint/recommended",
@@ -26,5 +27,6 @@ module.exports = require("./utils/extend")({
             },
         ],
         "@typescript-eslint/no-inferrable-types": 0,
+        "node/no-missing-import": 0,
     },
-})
+}

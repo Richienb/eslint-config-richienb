@@ -1,6 +1,7 @@
-module.exports = require("./utils/extend")({
+module.exports = {
+    extends: "./index",
     env: {
         worker: true,
         node: false,
     },
-})
+}
