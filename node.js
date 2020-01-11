@@ -1,6 +1,6 @@
 module.exports = {
-    extends: "./index",
-    env: {
-        browser: false,
-    },
+	extends: "./index",
+	env: {
+		browser: false,
+	},
 }

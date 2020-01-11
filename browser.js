@@ -1,7 +1,7 @@
 module.exports = {
-    extends: "./index",
-    env: {
-        worker: true,
-        node: false,
-    },
+	extends: "./index",
+	env: {
+		worker: true,
+		node: false,
+	},
 }
