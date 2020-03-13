@@ -59,5 +59,8 @@ module.exports = {
 		"unicorn/catch-error-name": 0,
 		"unicorn/prevent-abbreviations": 0,
 		"node/no-unsupported-features/es-syntax": 0,
+		"node/no-missing-import": ["error", {
+			"allowModules": ["electron", "type-fest"],
+		}],
 	},
 }
