@@ -22,11 +22,13 @@
 		"lint": "eslint .",
 		"test": "yarn lint && node test"
 	},
+	"engines": {
+		"node": ">=10"
+	},
 	"peerDependencies": {
 		"eslint": ">=6.2"
 	},
 	"dependencies": {
-		"@richienb/tsconfig": "^0.1.1",
 		"@typescript-eslint/eslint-plugin": "^2.25.0",
 		"@typescript-eslint/parser": "^2.25.0",
 		"eslint-config-xo": "^0.29.1",

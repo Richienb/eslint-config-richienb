@@ -44,11 +44,6 @@
     "@nodelib/fs.scandir" "2.1.3"
     fastq "^1.6.0"
 
-"@richienb/tsconfig@^0.1.1":
-  version "0.1.1"
-  resolved "https://registry.yarnpkg.com/@richienb/tsconfig/-/tsconfig-0.1.1.tgz#2ece4d59dfef1f6543ba5db17fbf04ef925f5c0a"
-  integrity sha512-UgIQzgzbS33m584QafFaJIhESVfOa25eTB6Ub0KkS3ry3mqarLPbaUCnhS7Ma/aqaxi06aRnN7me3Q/aUwQxwg==
-
 "@types/color-name@^1.1.1":
   version "1.1.1"
   resolved "https://registry.yarnpkg.com/@types/color-name/-/color-name-1.1.1.tgz#1c1261bbeaa10a8055bbc5d8ab84b7b2afc846a0"
