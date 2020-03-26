@@ -1,66 +1,69 @@
+const typescriptRules = require("./lib/typescript-rules")
+const basePlugins = require("./lib/base-plugins")
+
 module.exports = {
 	env: {
 		browser: true,
 		es6: true,
 		node: true,
+		worker: true
 	},
 	extends: [
-		"eslint:recommended",
-		"google",
-		"plugin:node/recommended",
-		"plugin:import/recommended",
-		"plugin:promise/recommended",
-		"plugin:unicorn/recommended",
-		"deprecated",
+		"xo",
+		...basePlugins
 	],
 	parserOptions: {
 		ecmaVersion: 2020,
 		ecmaFeatures: {
-			impliedStrict: true,
-		},
+			impliedStrict: true
+		}
 	},
 	globals: {
 		Atomics: "readonly",
-		SharedArrayBuffer: "readonly",
+		SharedArrayBuffer: "readonly"
 	},
 	rules: {
-		"indent": [
+		indent: [
 			"error",
-			"tab",
+			"tab"
 		],
 		"max-len": 0,
 		"no-tabs": [
 			"error",
-			{ allowIndentationTabs: true },
+			{ allowIndentationTabs: true }
 		],
 		"object-curly-spacing": [
 			"error",
-			"always",
+			"always"
 		],
-		"quotes": [
+		quotes: [
 			"error",
-			"double",
+			"double"
 		],
-		"semi": [
+		semi: [
 			"error",
-			"never",
+			"never"
 		],
 		"spaced-comment": [
 			"error",
 			"always",
 			{
-				"markers": [
-					"/",
-				],
-			},
+				markers: [
+					"/"
+				]
+			}
 		],
 		"promise/catch-or-return": 0,
 		"promise/no-callback-in-promise": 0,
-		"unicorn/catch-error-name": 0,
-		"unicorn/prevent-abbreviations": 0,
 		"node/no-unsupported-features/es-syntax": 0,
 		"node/no-missing-import": ["error", {
-			"allowModules": ["electron", "type-fest"],
-		}],
+			allowModules: ["electron", "type-fest"]
+		}]
 	},
+	overrides: [
+		{
+			files: ["*.ts", "*.tsx"],
+			...typescriptRules
+		}
+	]
 }
