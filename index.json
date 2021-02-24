@@ -38,6 +38,10 @@
 							"delimiter": "comma"
 						}
 					}
+				],
+				"@typescript-eslint/object-curly-spacing": [
+					"error",
+					"always"
 				]
 			}
 		}
