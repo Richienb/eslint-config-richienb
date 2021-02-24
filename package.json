@@ -1,6 +1,6 @@
 {
 	"name": "eslint-config-richienb",
-	"version": "0.6.1",
+	"version": "0.6.2",
 	"description": "My shared eslint configurations for different projects.",
 	"repository": "Richienb/eslint-config-richienb",
 	"author": {
