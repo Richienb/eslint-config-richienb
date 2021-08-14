@@ -1,7 +1,7 @@
 {
 	"name": "eslint-config-richienb",
 	"version": "0.6.2",
-	"description": "My shared eslint configurations for different projects.",
+	"description": "My shared xo configurations.",
 	"repository": "Richienb/eslint-config-richienb",
 	"author": {
 		"name": "Richie Bendall",
@@ -19,7 +19,8 @@
 	],
 	"main": "index.json",
 	"files": [
-		"index.json"
+		"index.json",
+		"next.json"
 	],
 	"scripts": {
 		"test": "xo"
@@ -27,11 +28,14 @@
 	"engines": {
 		"node": ">=12"
 	},
+	"dependencies": {
+		"eslint-config-xo-nextjs": "^3.2.0"
+	},
 	"peerDependencies": {
-		"xo": ">=0.37.1"
+		"xo": ">=0.44.0"
 	},
 	"devDependencies": {
-		"xo": "^0.37.1"
+		"xo": "^0.44.0"
 	},
 	"xo": {
 		"extends": "."

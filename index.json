@@ -11,6 +11,10 @@
 		"object-curly-spacing": [
 			"error",
 			"always"
+		],
+		"jsx-quotes": [
+			"error",
+			"prefer-double"
 		]
 	},
 	"overrides": [
@@ -20,13 +24,20 @@
 				"*.tsx"
 			],
 			"rules": {
+				"quotes": "off",
 				"@typescript-eslint/quotes": [
 					"error",
 					"double"
 				],
+				"semi": "off",
 				"@typescript-eslint/semi": [
 					"error",
 					"never"
+				],
+				"object-curly-spacing": "off",
+				"@typescript-eslint/object-curly-spacing": [
+					"error",
+					"always"
 				],
 				"@typescript-eslint/member-delimiter-style": [
 					"error",
@@ -38,10 +49,6 @@
 							"delimiter": "comma"
 						}
 					}
-				],
-				"@typescript-eslint/object-curly-spacing": [
-					"error",
-					"always"
 				]
 			}
 		}

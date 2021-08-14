@@ -1,0 +1,9 @@
+{
+	"extends": [
+		"xo-nextjs",
+		"."
+	],
+	"rules": {
+		"react/jsx-child-element-spacing": "off"
+	}
+}

@@ -11,3 +11,7 @@ In your [xo](https://github.com/xojs/xo) config:
 	"extends": "richienb"
 }
 ```
+
+## Variants
+
+- `richienb/next` - [Next.js](https://nextjs.org)
