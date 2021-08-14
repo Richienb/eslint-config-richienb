@@ -1,6 +1,6 @@
 {
 	"name": "eslint-config-richienb",
-	"version": "0.6.2",
+	"version": "0.7.0",
 	"description": "My shared xo configurations.",
 	"repository": "Richienb/eslint-config-richienb",
 	"author": {
